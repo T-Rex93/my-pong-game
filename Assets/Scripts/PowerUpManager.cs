@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PowerUpManager : MonoBehaviour
 {
-    //public int maxPowerUpAmount;
     public List<GameObject> powerUpTemplateList;
     
     private List<GameObject> powerUpList;
@@ -17,12 +16,6 @@ public class PowerUpManager : MonoBehaviour
     public int spawnInterval;
 
     private float timer;
-
-    private void Start()
-    {
-        powerUpList = new List<GameObject>();
-        timer = 0;
-    }
 
     public void GenerateRandomPowerUp()
     {
@@ -64,6 +57,12 @@ public class PowerUpManager : MonoBehaviour
         {
             RemovePowerUp(powerUpList[0]);
         }
+    }
+
+    private void Start()
+    {
+        powerUpList = new List<GameObject>();
+        timer = 0;
     }
 
     private void Update()

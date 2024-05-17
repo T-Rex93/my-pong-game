@@ -12,7 +12,7 @@ public class PaddleController : MonoBehaviour
 
     private void Start()
     {
-        rig = GetComponent<Rigidbody2D>(); 
+        rig = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -39,5 +39,15 @@ public class PaddleController : MonoBehaviour
     {
         Debug.Log("TEST: " + movement);
         rig.velocity = movement;
+    }
+
+    public void ActivatePUBigPaddle()
+    {
+        transform.localScale = new Vector3(1,5,1);
+    }
+
+    public void ActivatePUFastPaddle(float magnitude)
+    {
+        rig.velocity *= magnitude;
     }
 }

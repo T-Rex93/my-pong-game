@@ -14,4 +14,19 @@ public class MainMenuController : MonoBehaviour
     {
         Debug.Log("Created by Me");
     }
+
+    public void ExitGame()
+    {
+        SceneManager.LoadScene("Scenes/MainMenu");
+    }
+
+    public void OpenCredits()
+    {
+        SceneManager.LoadScene("Scenes/Credits");
+    }
+
+    public void ExitCredits()
+    {
+        SceneManager.LoadScene("Scenes/MainMenu");
+    }
 }
