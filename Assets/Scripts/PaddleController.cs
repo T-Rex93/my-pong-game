@@ -46,8 +46,8 @@ public class PaddleController : MonoBehaviour
         transform.localScale = new Vector3(1,5,1);
     }
 
-    public void ActivatePUFastPaddle(float magnitude)
+    public void ActivatePUFastPaddle(int magnitude)
     {
-        rig.velocity *= magnitude;
+        speed *= magnitude;
     }
 }

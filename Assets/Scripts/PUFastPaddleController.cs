@@ -7,7 +7,7 @@ public class PUFastPaddleController : MonoBehaviour
     public Collider2D ball;
     public Collider2D rightPaddle;
     public Collider2D leftPaddle;
-    public float magnitude;
+    public int magnitude;
     public PowerUpManager manager;
 
     private void OnTriggerEnter2D(Collider2D collision)
